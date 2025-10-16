@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papa's Pizza</title>
-
+    <script src="js/pizza.js" defer></script>
     <!-- Favicon -->
     <link rel="icon" href="../images/pizza-icon.jpg">
-
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../styles/pizza-styles.css">
 </head>
@@ -29,10 +28,13 @@
                 <legend>Contact Info</legend>
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
+                <span id="err-fname" class="error">First name cannot be empty!</span>
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname">
+                <span id="err-lname" class="error">Last name cannot be empty!</span>
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
+                <span id="err-email" class="error">Email cannot be empty!</span>
              </fieldset>
 
             <!-- Pickup or Delivery -->

@@ -4,8 +4,11 @@ import express from 'express';
 // Create an instance of an Express application
 const app = express();
 
+// Set EJS as our view engine
+app.set('view engine', 'ejs');
+
 // Define the port number where our server will listen
-const PORT = 3000;
+const PORT = 3092;
 
 // Enable static file serving
 app.use(express.static('public'));
@@ -15,7 +18,7 @@ app.use(express.static('public'));
 // res: allows us to send back a response to the client
 app.get('/', (req, res) => {
 
-    res.sendFile(`${import.meta.dirname}/views/home.html`);
+    res.render('home');
 
 });
 
